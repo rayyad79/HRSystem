@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19E93687-0813-4952-83B6-10B2FEBF897A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRSystem</RootNamespace>
+    <AssemblyName>HRSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestHRSystem">
+      <HintPath>..\TestHRSystem\bin\Debug\TestHRSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="TreeGenerator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TreeGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveERPDB, Version=1.0.7151.14712, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WaveERPDB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Allowances.cs" />
+    <Compile Include="Classes\Certificates.cs" />
+    <Compile Include="Classes\Contracts.cs" />
+    <Compile Include="Classes\Deductions.cs" />
+    <Compile Include="Classes\Employees.cs" />
+    <Compile Include="Classes\EmpTrainingCourses.cs" />
+    <Compile Include="Classes\EmpVacations.cs" />
+    <Compile Include="Classes\Evaluation.cs" />
+    <Compile Include="Classes\HealthInsurance.cs" />
+    <Compile Include="Classes\JobTitles.cs" />
+    <Compile Include="Classes\Levels.cs" />
+    <Compile Include="Classes\Privileges.cs" />
+    <Compile Include="Classes\Qualifications.cs" />
+    <Compile Include="EmployeeAllowances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAllowances.Designer.cs">
+      <DependentUpon>EmployeeAllowances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAllowancesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAllowancesList.Designer.cs">
+      <DependentUpon>EmployeeAllowancesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttendance.Designer.cs">
+      <DependentUpon>EmployeeAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDeduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDeduction.Designer.cs">
+      <DependentUpon>EmployeeDeduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDeductionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDeductionsList.Designer.cs">
+      <DependentUpon>EmployeeDeductionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesProfiles.Designer.cs">
+      <DependentUpon>EmployeesProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTrainingCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeTrainingCourse.Designer.cs">
+      <DependentUpon>EmployeeTrainingCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraningCoursesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraningCoursesList.Designer.cs">
+      <DependentUpon>EmployeeTraningCoursesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_Login.Designer.cs">
+      <DependentUpon>HR_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_System.Designer.cs">
+      <DependentUpon>HR_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaintRectangles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaintRectangles.Designer.cs">
+      <DependentUpon>PaintRectangles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\TrainingCourses.cs" />
+    <Compile Include="VacationsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacationsList.Designer.cs">
+      <DependentUpon>VacationsList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllowancesClass_AddNewAllowance.sequencediagram.layout">
+      <DependentUpon>AllowancesClass_AddNewAllowance.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAllowances.resx">
+      <DependentUpon>EmployeeAllowances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAllowancesList.resx">
+      <DependentUpon>EmployeeAllowancesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttendance.resx">
+      <DependentUpon>EmployeeAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDeduction.resx">
+      <DependentUpon>EmployeeDeduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDeductionsList.resx">
+      <DependentUpon>EmployeeDeductionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesProfiles.resx">
+      <DependentUpon>EmployeesProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeTrainingCourse.resx">
+      <DependentUpon>EmployeeTrainingCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeTraningCoursesList.resx">
+      <DependentUpon>EmployeeTraningCoursesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_Login.resx">
+      <DependentUpon>HR_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_System.resx">
+      <DependentUpon>HR_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaintRectangles.resx">
+      <DependentUpon>PaintRectangles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VacationsList.resx">
+      <DependentUpon>VacationsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AllowancesClass_AddNewAllowance.sequencediagram" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
